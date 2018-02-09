@@ -87,3 +87,31 @@ primitive data type
 4. boolean
 	true
 	false
+
+primitive types are stored by value
+	create a variable = create space in memory
+	assign a variable a value = provide value within that space of memory
+
+#####################
+Arithmetic Operators
+#####################
+
+Division
+floating point 
+13.0 / 5.0 == 2.6
+integer
+when dividing integers, the answer will be an integer
+13 / 5 == 2
+
+Prefix
+int myVal = 5;
+System.out.println(++myValue); //6
+System.out.println(myValue); //6
+
+Postfix
+int myVal = 5;
+System.out.println(myVal++); //5
+System.out.println(myVal); //6
+
+Operator precedence
+Postfix > Prefix > Multipicative > Additive
