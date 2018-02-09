@@ -20,3 +20,37 @@ we need to JRE to run our byte codes in any host environment
 this why end users just need JRE to run the code
 
 java.exe is what runs our program
+
+compiled code for intelliJ is placed in
+out/production/pluralsight_java/
+
+######################
+Creating a simple app
+######################
+
+must end statements with ;
+
+comments
+line comments //
+block comments /* */ 
+javadoc (equivalent to python docstrings) /** /
+
+#################
+Intro to packages
+#################
+
+at the top of the source code you will see the specification of packages 
+like import in python
+
+package names follow standard naming convention
+- all lowercase
+- assure package name uniqueness at a global scale by associating package with domain name
+- final group specifies a specific project
+
+package com.pluralsight.example;
+
+Main class with this package on top will now be identified as com.pluralsight.example.Main
+
+most IDE require folder paths to match package name
+
+
