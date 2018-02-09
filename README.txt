@@ -50,3 +50,40 @@ compile in IDE
 $ cd GetOrganized/out/production/GetOrganized
 $ java com.pluralsight.getorganized.Main
 $ Hello Get Organized
+
+###########################################
+Variables, Data Types, and Math Operators
+###########################################
+
+int dataValue;
+dataValue = 100;
+
+or in 1 line
+
+int dataValue = 100;
+
+variable = named data storage
+	strongly typed language => need to specify the variable type
+	can modify the value stored inside the variable
+	always start with a letter
+	camelCase
+
+primitive data type
+1. integer
+	byte	8 bits
+	short	16 bits
+	int		32 bits
+	long	64 bits
+
+2. floating point
+	float	32 bit
+	double	64 bit
+
+3. character
+	stores single unicode character
+	ex: char regularU = 'U'
+	different than strings
+
+4. boolean
+	true
+	false
