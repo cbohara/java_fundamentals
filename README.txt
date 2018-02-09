@@ -24,33 +24,29 @@ java.exe is what runs our program
 compiled code for intelliJ is placed in
 out/production/pluralsight_java/
 
-######################
-Creating a simple app
-######################
+######
+Intro
+######
 
 must end statements with ;
 
 comments
-line comments //
-block comments /* */ 
-javadoc (equivalent to python docstrings) /** /
-
-#################
-Intro to packages
-#################
+	line comments //
+	block comments /* */ 
+	javadoc (equivalent to python docstrings) /** /
 
 at the top of the source code you will see the specification of packages 
 like import in python
 
 package names follow standard naming convention
-- all lowercase
-- assure package name uniqueness at a global scale by associating package with domain name
-- final group specifies a specific project
+	all lowercase
+	assure package name uniqueness at a global scale by associating package with domain name
+	final group specifies a specific project
+	ex: package com.pluralsight.example;
+		Main class with this package on top will now be identified as com.pluralsight.example.Main
+	most IDE require folder paths to match package name
 
-package com.pluralsight.example;
-
-Main class with this package on top will now be identified as com.pluralsight.example.Main
-
-most IDE require folder paths to match package name
-
-
+compile in IDE
+$ cd GetOrganized/out/production/GetOrganized
+$ java com.pluralsight.getorganized.Main
+$ Hello Get Organized
