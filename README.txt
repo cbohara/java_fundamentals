@@ -93,7 +93,7 @@ primitive types are stored by value
 	assign a variable a value = provide value within that space of memory
 
 #####################
-Arithmetic Operators
+Arithemtic operators
 #####################
 
 Division
@@ -115,3 +115,28 @@ System.out.println(myVal); //6
 
 Operator precedence
 Postfix > Prefix > Multipicative > Additive
+
+#################
+Type conversion
+#################
+https://www.javatpoint.com/images/datatype2.JPG
+operations involve multiple data types 
+
+1. inplicit = performed automatically by the compiler
+widening conversions are automatic
+
+ex: convert 32 bit integer to 64 bit long iteger
+int iVal = 50;
+long lVal = iVal; 
+
+2. explicit = performed explicitly in code
+can perform widening and narrowing
+float > integer will drop the fraction
+use caution with narrowing conversions
+int > floating point = lose significant digits
+
+ex: take lVal and cast it down to a 32 bit integer
+long lVal = 50;
+int iVal = (int) lVal;
+
+
