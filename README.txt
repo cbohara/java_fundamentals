@@ -72,7 +72,7 @@ primitive data type
 1. integer
 	byte	8 bits
 	short	16 bits
-	int		32 bits
+	int	32 bits
 	long	64 bits
 
 2. floating point
@@ -137,6 +137,6 @@ int > floating point = lose significant digits
 
 ex: take lVal and cast it down to a 32 bit integer
 long lVal = 50;
-int iVal = (int) lVal;
+int iVal = (int)lVal;
 
 
