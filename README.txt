@@ -69,19 +69,24 @@ variable = named data storage
 	camelCase
 
 primitive data type
-1. integer
+1. integer - whole numbers
 	byte	8 bits
 	short	16 bits
 	int	32 bits
 	long	64 bits
+		need to specify by appending L to value
+		ex: long nationalDebt = 18100000000000L;
 
-2. floating point
+2. floating point - fractional numbers
 	float	32 bit
+		ex: float milesInMarathon = 26.2f;
 	double	64 bit
+		ex: double atomWidthInMeters = 0.0000000001d;
 
 3. character
 	stores single unicode character
-	ex: char regularU = 'U'
+		ex: char regularU = 'U';
+		ex: char unicode = '\u00DA';
 	different than strings
 
 4. boolean
@@ -92,6 +97,11 @@ primitive types are stored by value
 	create a variable = create space in memory
 	assign a variable a value = provide value within that space of memory
 
+	ex: 
+		int firstValue = 100;
+		int otherValue = firstValue;		// store only the value 100 to otherValue, not the location in memory
+		firstValue = 50;					// when you reassign firstValue it does NOT change otherValue
+
 #####################
 Arithemtic operators
 #####################
@@ -99,6 +109,7 @@ Arithemtic operators
 Division
 floating point 
 13.0 / 5.0 == 2.6
+
 integer
 when dividing integers, the answer will be an integer
 13 / 5 == 2
@@ -124,6 +135,9 @@ operations involve multiple data types
 
 1. inplicit = performed automatically by the compiler
 widening conversions are automatic
+if there are mixed integer sizes > use largest integer in the equation
+if there are mixed floating point sizes > use double
+if there are mixed integers and floating point types > use largest floating point in the equation
 
 ex: convert 32 bit integer to 64 bit long iteger
 int iVal = 50;
@@ -133,10 +147,8 @@ long lVal = iVal;
 can perform widening and narrowing
 float > integer will drop the fraction
 use caution with narrowing conversions
-int > floating point = lose significant digits
+int > floating point = lose precision
 
 ex: take lVal and cast it down to a 32 bit integer
 long lVal = 50;
 int iVal = (int)lVal;
-
-
