@@ -152,3 +152,95 @@ int > floating point = lose precision
 ex: take lVal and cast it down to a 32 bit integer
 long lVal = 50;
 int iVal = (int)lVal;
+
+#########################
+Conditional logic
+#########################
+
+ex: 
+int v1 = 7;
+int v2 = 5;
+// if v1 > v2 is true return v1 else return v2
+int vMax = v1 > v2 ? v1 : v2;
+System.out.println(vMax); // 7 
+
+ex:
+float students = 30;
+float rooms = 4;
+
+// if rooms equals 0 return 0 else divide students by rooms
+float studentsPerRoom = rooms == 0.0f ? 0.0f : students/rooms;
+
+####################
+If/else
+####################
+
+ex:
+int v1 = 10;
+int v2 = 4;
+
+if (v1 > v2)
+	System.out.println("v1 is bigger than v2");
+else if (v2 > v1)
+	System.out.println("v2 is bigger than v1");
+else
+	System.out.println("v1 and v2 are equal");
+
+##################
+Block statements
+##################
+
+ex:
+int v1 = 10, v2 = 4, diff;
+if (v1 > v2) {
+	diff = v1 - v2;
+	System.out.println("v1 is bigger");
+	System.out.println(diff);
+}
+else if (v2 > v1) {
+	diff = v2 - v1;
+	System.out.println("v2 is bigger");
+	System.out.println(diff);
+}
+else
+	// do not need to have all block statements
+	System.out.println("v1 and v2 are equal")
+
+a variable declared within a block is not visible outside the block
+basic scope works just like python
+
+###################
+Logic operators
+###################
+
+AND &
+
+int a = 20, b = 14, c = 5;
+
+// true and true resolves to true
+if (a > b & b > c)
+	System.out.println("a is greater than c");
+
+OR | 
+
+false | true 
+true | false
+true | true
+all resolve to true
+
+Exclusive XOR ^
+
+false ^ true
+true ^ false
+resolves to true
+must be opposite on both sides
+
+Negation !
+
+##############################
+Conditional logic operators
+##############################
+
+only execute the right side of the equation if needed to determine the result
+&& only executes right side if left side is true to make sure true && true
+|| only executes right side if left side is false because if the left side is true than it is true
