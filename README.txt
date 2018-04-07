@@ -1,3 +1,4 @@
+Java Fundamentals
 https://app.pluralsight.com/library/courses/java-fundamentals-language/
 
 ##########
@@ -247,5 +248,102 @@ only execute the right side of the equation if needed to determine the result
 && only executes right side if left side is true to make sure true && true
 || only executes right side if left side is false because if the left side is true than it is true
 
+
+#############################################################################################################################3
+Maven Fundamentals
 https://app.pluralsight.com/library/courses/maven-fundamentals/
+
+transitive dependencies 
+new feature in Maven 2.0
+avoid needing to discover and specify the libraries that your own dependencies require
+includes automatically
+
+#######
+goals
+######
+clean
+deletes target dir and any generated resources
+
+compile
+compile all source code
+generate any files
+copies resources into class directory
+
+package
+runs compile first
+runs any unit tests
+packages app based off its packaging type (ex: jar)
+
+install 
+runs package command
+install in local maven repository (~/.m2)
+
+deploy
+runs install command and deploys to internal corporate repo
+
+##################
+override defaults
+##################
+
+pom.xml
+    <build>
+        <finalName>foo</finalName>
+    </build>
+
+####################
+dependencies
+####################
+
+need minimum of 3 things
+	groupId
+	artifactId
+	version
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.1</version>
+        </dependency>
+    </dependencies>
+
+version
+	SNAPSHOT
+		where development should start
+		allows you to push new code to a repo and have the IDE check for changes
+		saves you from re-releasing versions for development
+	RELEASE/FINAL
+		never deploy to production with a SNAPSHOT
+		commonly set final version as RELEASE or FINAL
+
+scopes
+	compile
+		default scope
+		artifacts available everywhere
+	provided
+		like compile
+		artifact will be provided where it is deployed 
+	runtime
+		not needed for compiling
+		needed for execution
+	test
+		only available for tests
+	system
+		DO NOT USE
+
+######################
+repositories
+######################
+
+local repo
+	maven looks here first
+	~/.m2/repository/
+
+external repo
+	http accessible location where you can download files
+	default repo location 
+		specified in super pom.xml (DO NOT EDIT)
+		http://repo.maven.apache.org/maven2
+	corporate repo
+		usually use Nexus
 
