@@ -1,3 +1,5 @@
+https://app.pluralsight.com/library/courses/java-fundamentals-language/
+
 ##########
 JRE vs JDK
 ##########
@@ -244,3 +246,6 @@ Conditional logic operators
 only execute the right side of the equation if needed to determine the result
 && only executes right side if left side is true to make sure true && true
 || only executes right side if left side is false because if the left side is true than it is true
+
+https://app.pluralsight.com/library/courses/maven-fundamentals/
+
