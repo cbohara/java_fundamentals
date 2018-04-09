@@ -1,5 +1,7 @@
+#############################################################################################################################3
 Java Fundamentals
 https://app.pluralsight.com/library/courses/java-fundamentals-language/
+#############################################################################################################################3
 
 ##########
 JRE vs JDK
@@ -252,6 +254,7 @@ only execute the right side of the equation if needed to determine the result
 #############################################################################################################################3
 Maven Fundamentals
 https://app.pluralsight.com/library/courses/maven-fundamentals/
+#############################################################################################################################3
 
 transitive dependencies 
 new feature in Maven 2.0
@@ -347,3 +350,13 @@ external repo
 	corporate repo
 		usually use Nexus
 
+
+#############################################################################################################################3
+Gradle guides
+https://guides.gradle.org/building-java-applications/
+#############################################################################################################################3
+
+Gradle wrapper 
+script that invokes a declared version of gradle
+downloads gradle if necessary
+suggested method in order to keep gradle version in source control
