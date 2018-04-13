@@ -349,14 +349,3 @@ external repo
 		http://repo.maven.apache.org/maven2
 	corporate repo
 		usually use Nexus
-
-
-#############################################################################################################################3
-Gradle guides
-https://guides.gradle.org/building-java-applications/
-#############################################################################################################################3
-
-Gradle wrapper 
-script that invokes a declared version of gradle
-downloads gradle if necessary
-suggested method in order to keep gradle version in source control
